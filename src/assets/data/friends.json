@@ -1,0 +1,28 @@
+[
+  {
+    "User": {
+      "UserName": "Mohit",
+      "UserId": "1"
+    },
+    "Expense": [4000]
+  },
+  {
+    "User": {
+      "UserName": "Himanshu",
+      "UserId": "2"
+    },
+    "Expense": [4000]
+  },{
+    "User": {
+      "UserName": "Pranshu",
+      "UserId": "3"
+    },
+    "Expense": [1000]
+  },{
+    "User": {
+      "UserName": "Abhishek",
+      "UserId": "4"
+    },
+    "Expense": [5000]
+  }
+]

@@ -1,0 +1,45 @@
+<div id="center_column" data-ol-has-click-handler="">
+  <div class="dashboard header">
+    <div class="topbar">
+      <div class="actions">
+        <a routerLink="/expense" routerLinkActive="active" class="btn btn-large btn-orange">
+          Add an expense
+        </a>
+        <a routerLink="/expense" class="btn btn-large btn-mint">
+          Settle up
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="clearfix">
+    <div id="dashboard_balances" data-ol-has-click-handler="">
+      <div style="padding: 10px 15px; position: relative; margin: 20px -15px">
+
+        <img style="position: absolute; top: 0; left: 40px; width: 120px;"
+          src="https://dx0qysuen8cbs.cloudfront.net/assets/fat_rabbit/person-2d59b69b3e7431884ebec1a55de75a4153a17c4050e6b50051ca90412e72cf96.png"
+          alt="Person">
+        <div class="welcome">
+          <h1>
+            Welcome to My App!
+          </h1>
+
+          <div style="margin-top: 15px; color: #999; font-size: 18px; line-height: 24px">
+            My app helps you split bills with friends.
+            <div style="height: 15px"></div>
+            Click “Add an expense” above to get started, or invite some friends first!
+          </div>
+
+          <a data-toggle="modal" [routerLink]="['/friends']" routerLinkActive="router-link-active"
+            class="btn btn-orange btn-large" style="margin-top: 18px; font-size: 18px">
+            <i class="icon-plus" style="margin-right: 4px"></i><i class="icon-user icon-large"
+              style="margin-right: 10px"></i>
+            Add friends on My app
+          </a>
+        </div>
+
+      </div>
+    </div>
+    <div id="recent_activity" style="display: none"></div>
+  </div>
+</div>

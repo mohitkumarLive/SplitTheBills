@@ -1,0 +1,12 @@
+<div class="card">
+  <div class="card-header">
+    {{UserExpense.User.UserName | uppercase  }}
+  </div>
+  <div class="card-body">
+    <span style="margin: 5px; padding: 5px; font-size: 15px;" *ngFor="let expense of UserExpense.Expense"
+      class="badge badge-warning">{{expense}}</span>
+  </div>
+  <div class="card-footer text-muted">
+    Total : {{ UserExpense.Total() }}
+  </div>
+</div>

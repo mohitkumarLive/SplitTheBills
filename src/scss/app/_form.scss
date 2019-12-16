@@ -1,0 +1,71 @@
+.form-control{
+    border-radius: 15px;
+    border-width: 1px;
+    border-color: $secondary;
+}
+.btn{
+    min-width: 70px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    font-weight: 500;
+    //border-radius: 5px;
+    font-size: 14px;
+    border-radius: 25em;
+}
+select{
+    text-transform: capitalize;
+    option:hover{
+        background-color: $primary;
+    }
+}
+.primary-line{
+    border-top: 2px solid $primary;
+}
+.user-part{
+    border-right: 3px dotted rgba(0,0,0,0.8);
+    &:last-of-type{
+        border-right: 0;
+    }
+}
+
+.card{
+    border-width: 1px;
+    border-radius: 15px;
+    border-color: $secondary;
+    .card-header{
+        font-size: 18px;
+        font-weight: 300;
+        background: $white;
+        color: $secondary;
+        border-radius: 15px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-color: $secondary;
+    }
+    .card-body{
+        background: $bg-fade;
+    }
+    .card-footer{
+        font-size: 15px;
+        letter-spacing: 0.8px;
+        font-weight: 500;
+        border-radius: 0;
+        border:none;
+    }
+}
+@media only screen and (max-width: 767px){
+    .user-part{
+        border-right: none;
+        border-bottom: 2px dotted rgba(0,0,0,0.8);
+        padding: 15px;
+        
+        &:last-of-type{
+            border-bottom: 0;
+            border-right: none;
+        }
+        .user-name{
+            margin-left: 20px;
+            text-align: left !important;
+        }
+    }
+}

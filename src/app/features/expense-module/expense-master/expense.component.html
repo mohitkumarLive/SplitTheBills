@@ -1,0 +1,26 @@
+<div class="container-fluid">
+    <h2 class="mb-4">Expense</h2>
+
+
+    <app-expense-add class="expense-add" (AddExpenseToUser)="AddExpenseToUser($event)" [Users$]="UserExpenseList$">
+    </app-expense-add>
+
+
+    <div class="row">
+        <app-expense-card class="col-md-3 col-sm-6 mb-3" *ngFor="let userExpense of UserExpenseList$ | async"
+            [UserExpense]="userExpense">
+        </app-expense-card>
+    </div>
+    <div class="settle-btn-container mb-3">
+        <button class="btn btn-secondary btn-sm" (click)="settleUp()">SettleUp</button>
+    </div>
+    <div class="row">
+        <ul class="settle-list">
+            <li *ngFor="let item of SettlementItem">
+                {{item.From.UserName }} <span class="item-dir text-warning">--></span> {{item.To.UserName }} <span
+                    class="item-dir text-warning">--></span> Amount <span
+                    class="badge badge-warning btn-sm">{{ MathAbs(item.Amount)}}</span>
+            </li>
+        </ul>
+    </div>
+</div>

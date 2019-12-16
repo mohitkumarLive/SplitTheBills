@@ -1,0 +1,19 @@
+
+
+// Bootstrap variable overrides cum app variables
+// // @import "bootstrap/variables";
+// // @import "bootstrap/mixins";
+@import "app/variables";
+
+/* ############### BOOTSTRAP FRAMEWORK ############### */
+ @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+
+//App styles
+@import "app/base";
+@import "app/form";
+
+
+
+
