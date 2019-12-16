@@ -3,7 +3,6 @@ import { UserExpense } from 'src/app/shared/model/userExpense.model';
 
 @Component({
   selector : 'app-expense-card',
-  changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl : './expenseCard.component.html',
 })
 
